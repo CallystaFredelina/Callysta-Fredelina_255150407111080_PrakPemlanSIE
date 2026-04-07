@@ -14,10 +14,10 @@ public class AmongUsGame {
         david.doWork();
         jacky.doWork();
 
-        jacky.kill(cindy); // cindy terbunuh, isAlive = false
+        jacky.kill(cindy); 
 
-        cindy.callMeeting(); // cindy sudah mati, tidak bisa
-        david.callMeeting(); // david masih hidup, bisa
+        cindy.callMeeting(); 
+        david.callMeeting(); 
 
         AmongUsGame.check(brian);
         AmongUsGame.check(david);
