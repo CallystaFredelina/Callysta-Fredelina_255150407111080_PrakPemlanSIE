@@ -37,6 +37,7 @@ public class DoubleLinkedList {
             current = current.next;
         }
     }
+    //a.
     Node findByValue(Object value) {
     Node current = head;
     while (current != null) {
@@ -47,6 +48,7 @@ public class DoubleLinkedList {
     }
     return null;
 }
+    //b.
   Node findByIndex(int index) {
     if (index < 0 || index >= size) return null;
     Node current = head;
@@ -55,6 +57,7 @@ public class DoubleLinkedList {
     }
     return current;
 }
+    //c.
 void removeByIndex(int index) {
     if (index < 0 || index >= size) return;
     if (index == 0) {
@@ -69,6 +72,7 @@ void removeByIndex(int index) {
     }
     size--;
 }
+    //d.
   void removeByValue(Object value) {
     Node current = head;
     while (current != null) {
@@ -83,6 +87,7 @@ void removeByIndex(int index) {
         current = current.next;
     }
   }
+    //e.
     void addAtIndex(Node data, int index) {
     if (index <= 0) {
         addFirst(data);
@@ -97,6 +102,7 @@ void removeByIndex(int index) {
         size++;
     }
   }
+    //f.
   void addAfterValue(Object value, Node data) {
     Node current = findByValue(value);
     if (current == null) return;
