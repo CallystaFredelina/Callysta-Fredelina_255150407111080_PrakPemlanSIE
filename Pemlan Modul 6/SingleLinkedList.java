@@ -78,6 +78,7 @@ public class SingleLinkedList {
         }
         size--;
     }
+    //d.
     void removeByValue(Object value) {
         if (isEmpty()) {
             System.out.println("List kosong.");
@@ -104,6 +105,7 @@ public class SingleLinkedList {
         }
         System.out.println("Data " + value + " tidak ditemukan.");
     } 
+    //e.
     void addAtIndex(int index, Node data) {
         if (index < 0 || index > size) {
             System.out.println("Index tidak valid.");
@@ -120,6 +122,7 @@ public class SingleLinkedList {
             size++;
         }
     }
+    //f.
     void addAfterValue(Object value, Node data) {
         Node target = findByValue(value);
         if (target == null) {
@@ -133,6 +136,7 @@ public class SingleLinkedList {
         }
         size++;
     }
+    //g.
     void addBeforeValue(Object value, Node data) {
         if (isEmpty()) {
             System.out.println("List kosong.");
